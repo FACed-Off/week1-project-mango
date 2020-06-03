@@ -30,33 +30,3 @@ function nameValidation() {
 
   //Adds the validation text to the DOM by editing the errorText paragraph
 }
-
-// function companyValidation() {
-//     //Validates the name input
-//     let companyValue, validationText;
-
-//     //Gets value of the input field with id="companyName"
-//     companyValue = document.getElementById("companyName").value;
-
-//     if (/*company conditional fails*/) {
-//         //Show error message
-//         //Do not submit information
-//     }
-
-//     document.getElementById("errorText").innerHTML = validationText;
-// }
-
-// function emailValidation() {
-//     //Validates the name input
-//     let emailValue, validationText;
-
-//     //Gets value of the input field with id="email"
-//     emailValue = document.getElementById("email").value;
-
-//     if (/*email conditional fails*/) {
-//         //Show error message
-//         //Do not submit information
-//     }
-
-//     document.getElementById("errorText").innerHTML = validationText;
-// }
