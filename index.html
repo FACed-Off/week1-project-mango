@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My web page</title>
     <!-- <link rel="icon" href="/favicon.ico"> -->
-    <link rel="stylesheet" href="/my-styles.css">
-    <meta name="description" content="Team Mango Agency website">
+    <link rel="stylesheet" href="/my-styles.css" />
+    <meta name="description" content="Team Mango Agency website" />
   </head>
   <body>
     <h1>My web page</h1>
 
-    <form id="contactForm" action="https://formspree.io/xpzydrpw
-    " onsubmit="return validateForm()" method="POST">
+    <form
+      id="contactForm"
+      action="https://formspree.io/xpzydrpw
+    "
+      onsubmit="return validateForm()"
+      method="POST"
+      target="_blank"
+    >
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="John Doe"
+        required
+      />
 
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" placeholder="John Doe" required>
+      <label for="companyName">Company name</label>
+      <input
+        id="companyName"
+        type="text"
+        name="companyName"
+        placeholder="Team Mango"
+        required
+      />
 
-        <label for="companyName">Company name</label>
-        <input id="companyName" type="text" name="companyName" placeholder="Team Mango" required>
+      <label for="email">E-mail</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="hello@teammango.com"
+        required
+      />
 
-        <label for="email">E-mail</label>
-        <input id="email" type="email" name="email" placeholder="hello@teammango.com" required>
+      <button id="submitButton" type="submit" name="submit">
+        Submit
+      </button>
 
-        <button id="submitButton" type="submit" name="submit">Submit</button>
-
-        <p id="errorText"></p>
-
+      <p id="errorText"></p>
     </form>
 
     <script src="script.js"></script>
