@@ -11,7 +11,8 @@
   <body>
     <h1>My web page</h1>
 
-    <form id="contactForm" action="" method="post">
+    <form id="contactForm" action="https://formspree.io/xpzydrpw
+    " onsubmit="return validateForm()" method="POST">
 
         <label for="name">Name</label>
         <input id="name" type="text" name="name" placeholder="John Doe" required>
@@ -23,6 +24,8 @@
         <input id="email" type="email" name="email" placeholder="hello@teammango.com" required>
 
         <button id="submitButton" type="submit" name="submit">Submit</button>
+
+        <p id="errorText"></p>
 
     </form>
 
