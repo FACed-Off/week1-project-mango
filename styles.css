@@ -6,41 +6,50 @@
 }
 
 :root {
-  --brand-colour: #F2A900;
+  --brand-colour: #f2a900;
   --bg-colour: #f1f1f2;
   --text-colour: #201c23;
   --accent-colour: #73a1ad;
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--text-colour);
-  background-color: var(--bg-colour); 
+  background-color: var(--bg-colour);
 }
 
 /* Heading */
 .header {
   width: 100%;
   height: 50vh;
-  padding: 5rem 2.5rem 2.5rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  background: url(images/header-image.svg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-margin-bottom: 2rem;
-/* display:none; */
+  background-color: hsl(15, 55%, 96%);
+  margin-bottom: 2rem;
 }
 
 .header-text {
-  color: aliceblue;
+  color: hsl(0, 0%, 0%);
   text-align: center;
   text-transform: lowercase;
   letter-spacing: 0.3rem;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+.header-text .header-image-container {
+  height: 100%;
+}
+
+.header-text .header-image-container img {
+  height: 100%;
+  max-width: 100%;
 }
 
 #heading {
@@ -58,7 +67,6 @@ margin-bottom: 2rem;
   border: var(--accent-colour) solid 2px;
   padding: 1rem;
   border-radius: 3%;
-  /* background: #73a1ad; */
 }
 
 #about-us {
@@ -102,11 +110,6 @@ article {
     width: 60%;
   }
 
-  .header {
-    flex-direction: column;
-    background: url(assets/default.png) no-repeat fixed 50% 50% / cover;
-  }
-
   #heading {
     font-size: 6rem;
   }
@@ -138,6 +141,11 @@ article {
   padding: 1em;
 }
 
+.nav-link:hover {
+  color: black;
+  background-color: #ebc51d;
+}
+
 #link-container {
   display: flex;
 }
@@ -146,15 +154,16 @@ article {
   #nav-bar-logo {
     display: none;
   }
+  #heading {
+    font-size: 3rem;
+  }
 }
 
 /* Only turn on hover effect when device supports it, 
 stops touch devices having sticky hover css effects */
 
 @media (hover: hover) {
-
   .nav-link:hover {
-    background-color:var(--text-colour);
+    background-color: var(--text-colour);
   }
-
 }
