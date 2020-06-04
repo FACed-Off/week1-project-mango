@@ -22,7 +22,7 @@ function nameValidation() {
   let nameValue, validationText, lettersOnly;
 
   //Sets validation text
-  validationText = "";
+  validationText = "Submission successful";
   //Gets value of the input field with id="name"
   nameValue = document.getElementById("name").value;
   //Sets our comparison criteria to be equal if any digits are present
