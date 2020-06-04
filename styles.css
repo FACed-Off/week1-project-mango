@@ -130,10 +130,6 @@ article {
   padding: 1em;
 }
 
-.nav-link:hover {
-  background-color:var(--text-colour);
-}
-
 #link-container {
   display: flex;
 }
@@ -142,4 +138,15 @@ article {
   #nav-bar-logo {
     display: none;
   }
+}
+
+/* Only turn on hover effect when device supports it, 
+stops touch devices having sticky hover css effects */
+
+@media (hover: hover) {
+
+  .nav-link:hover {
+    background-color:var(--text-colour);
+  }
+
 }
