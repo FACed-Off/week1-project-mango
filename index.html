@@ -10,16 +10,18 @@
   </head>
   <body>
     <h1>My web page</h1>
+    <!-- Start of Header -->
+    <section class="header center" id="heading-section">
+      <div class="header-text">
+        <h1 id="heading">We are</h1>
+        <!-- <p class="header-paragraph">
+          "Some cool, witty slogan here"
+        </p> -->
+      </div>
+    </section>
+    <!-- End of Header -->
 
-    <!-- Form submits to formspree only if validation passes, opening a new tab
-    upon successful submission -->
-    <form
-      id="contactForm"
-      action="https://formspree.io/xpzydrpw"
-      onsubmit="return validateForm()"
-      method="POST"
-      target="_blank"
-    >
+    <form id="contactForm" action="" method="post">
       <label for="name">Name</label>
       <input
         id="name"
@@ -47,11 +49,7 @@
         required
       />
 
-      <button id="submitButton" type="submit" name="submit">
-        Submit
-      </button>
-
-      <p id="errorText"></p>
+      <button id="submitButton" type="submit" name="submit">Submit</button>
     </form>
 
     <script src="script.js"></script>
