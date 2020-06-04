@@ -5,6 +5,10 @@
   font-family: "Monserrat", sans-serif; /* overflow: hidden; */
 }
 
+body {
+  background-color: #F2A900;
+}
+/* #EB4C00 */
 /* Heading */
 .header {
   width: 100%;
@@ -12,10 +16,11 @@
   padding: 5rem 2.5rem 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
-  background: url(assets/default.png) no-repeat;
+  background: url(images/header-image.svg) no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+margin-bottom: 2rem;
 }
 
 .header-text {
@@ -37,6 +42,10 @@
   flex-direction: column;
   width: 30%;
   margin: 0 auto;
+  border: darkblue solid 2px;
+  padding: 1rem;
+  border-radius: 3%;
+  background: #F2f5f1;
 }
 
 #about-us {
@@ -48,12 +57,15 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .headshot-image {
   height: 13em;
   width: 10em;
   object-fit: cover;
+  border: solid black 1px;
+  border-radius: 10%;
 }
 
 /* Class to hide h1 accessbility label for html5 outline */
