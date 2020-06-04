@@ -9,7 +9,32 @@
     <meta name="description" content="Team Mango Agency website" />
   </head>
   <body>
-    <h1>My web page</h1>
+
+
+    <!-- Start of navbar -->
+
+    <nav id="nav-bar">
+      <img 
+      src="images/navlogo.png"
+      alt="nav bar logo"
+      id="nav-bar-logo">
+      <div id="link-container">
+        <a 
+          href="#contact-form" 
+          alt="link to contact form"
+          class="nav-link"
+        > Contact Us</a>
+        <a 
+          href="#contact-form" 
+          alt="link to contact form"
+          class="nav-link"
+        > Contact Us</a>
+      </div>
+
+    </nav>
+  
+    <!-- End -->
+      
     <!-- Start of Header -->
     <section class="header center" id="heading-section">
       <div class="header-text">
@@ -21,7 +46,51 @@
     </section>
     <!-- End of Header -->
 
-    <form id="contactForm" action="" method="post">
+    <!-- About us section -->
+    <section id="about-us">
+     <h1 class="hidden-offscreen">About us</h1>
+      <article id="meeran">
+        <h1>Hello I am Meeran</h1>
+        <img class="headshot-image" src="img/mbk.jpg" alt="Headshot of Meeran">
+        <p>Short description about the person</p>
+      </article>
+
+      <article id="terrence">
+        <h1>Hello I am TC</h1>
+        <img class="headshot-image" src="img/tc.jpg" alt="Headshot of Terrence">
+        <p>Short description about the person</p>
+      </article>
+
+      <article id="shivani">
+        <h1>Hello I am Shivani</h1>
+        <img class="headshot-image" src="img/ss.png" alt="Headshot of Shivani">
+        <p>Short description about the person</p>
+      </article>
+
+    </section>
+
+    
+
+    <!-- Form submits to formspree only if validation passes, opening a new tab
+    upon successful submission -->
+    <section>
+      <div class="square">
+
+      </div>
+    </section>
+
+
+    <section id="contact-form">
+      
+    <form
+      id="contactForm"
+      action="https://formspree.io/xpzydrpw"
+      onsubmit="return validateForm()"
+      method="POST"
+      target="_blank"
+    >
+    <h1>Contact Form</h1>
+
       <label for="name">Name</label>
       <input
         id="name"
@@ -51,7 +120,7 @@
 
       <button id="submitButton" type="submit" name="submit">Submit</button>
     </form>
-
+  </section>
     <script src="script.js"></script>
   </body>
 </html>

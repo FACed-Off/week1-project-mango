@@ -40,10 +40,41 @@
   margin: 0 auto;
 }
 
+#about-us {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+article {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot-image {
+  height: 13em;
+  width: 10em;
+  object-fit: cover;
+}
+
+/* Class to hide h1 accessbility label for html5 outline */
+.hidden-offscreen {
+  position: absolute;
+  clip-path: rect(1px 1px 1px 1px);
+  clip-path: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 5px;
+  width: 5px;
+  overflow: hidden;
+}
+
 @media all and (max-width: 600px) {
   #contactForm {
     width: 60%;
   }
+
 
   .header {
     flex-direction: column;
@@ -54,7 +85,40 @@
     font-size: 6rem;
   }
 
-  /* .header-paragraph {
-    font-size: 1rem;
-  } */
+
+  #about-us {
+    flex-direction: column;
+  }
+
+}
+
+.square {
+  width: 1000px; 
+  height: 1000px;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  background-color: darkblue;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#nav-bar-logo {
+  width: 5em;
+  height: 5em;
+}
+
+.nav-link {
+  display: flex;
+  color: white;
+  align-self: center;
+  border: white;
+  margin: 0;
+  padding: 1em;
+}
+
+#link-container {
+  display: flex;
 }
