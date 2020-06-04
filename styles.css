@@ -10,3 +10,34 @@
     width: 60%;
   }
 }
+
+.square {
+  width: 1000px; 
+  height: 1000px;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  background-color: darkblue;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#nav-bar-logo {
+  width: 5em;
+  height: 5em;
+}
+
+.nav-link {
+  display: flex;
+  color: white;
+  align-self: center;
+  border: white;
+  margin: 0;
+  padding: 1em;
+}
+
+#link-container {
+  display: flex;
+}
