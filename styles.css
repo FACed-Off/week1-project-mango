@@ -2,19 +2,20 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Monserrat", sans-serif;
-  overflow: hidden;
+  font-family: "Monserrat", sans-serif; /* overflow: hidden; */
 }
 
 /* Heading */
 .header {
   width: 100%;
   height: 50vh;
-  padding: 2.5rem;
+  padding: 5rem 2.5rem 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
-  background: url(assets/default.png) no-repeat fixed 0% 80% / cover;
+  background: url(assets/default.png) no-repeat;
+  background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 .header-text {
@@ -27,9 +28,7 @@
 #heading {
   font-size: 6rem;
   font-weight: 500;
-  animation: drop-letters 5s 1s infinite;
   letter-spacing: 10px;
-  animation: drop-letters 5s 1s;
 }
 /* End of Heading */
 
@@ -43,11 +42,10 @@
 #about-us {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 article {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -75,7 +73,6 @@ article {
     width: 60%;
   }
 
-
   .header {
     flex-direction: column;
     background: url(assets/default.png) no-repeat fixed 50% 50% / cover;
@@ -85,16 +82,9 @@ article {
     font-size: 6rem;
   }
 
-
   #about-us {
     flex-direction: column;
   }
-
-}
-
-.square {
-  width: 1000px; 
-  height: 1000px;
 }
 
 #nav-bar {
@@ -106,7 +96,7 @@ article {
 }
 
 #nav-bar-logo {
-  width: 5em;
+  width: 9em;
   height: 5em;
 }
 
@@ -121,4 +111,10 @@ article {
 
 #link-container {
   display: flex;
+}
+
+@media all and (max-width: 420px) {
+  #nav-bar-logo {
+    display: none;
+  }
 }
