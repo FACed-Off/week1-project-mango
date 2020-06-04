@@ -109,6 +109,11 @@ article {
   padding: 1em;
 }
 
+.nav-link:hover {
+  color: black;
+  background-color:#EBC51D;
+}
+
 #link-container {
   display: flex;
 }
