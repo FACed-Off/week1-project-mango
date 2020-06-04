@@ -50,7 +50,7 @@ margin-bottom: 2rem;
 }
 /* End of Heading */
 
-#contactForm {
+#contact-form {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -93,12 +93,12 @@ article {
   overflow: hidden;
 }
 
-#submitButton {
+#submit-button {
   cursor: pointer;
 }
 
 @media all and (max-width: 600px) {
-  #contactForm {
+  #contact-form {
     width: 60%;
   }
 

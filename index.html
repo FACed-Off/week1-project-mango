@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My web page</title>
+    <title>Team Mango website</title>
     <!-- <link rel="icon" href="/favicon.ico"> -->
     <link rel="stylesheet" href="styles.css" />
     <meta name="description" content="Team Mango Agency website" />
@@ -20,7 +20,7 @@
         <a href="#about-us" alt="link to about us" class="nav-link">
           About Us</a
         >
-        <a href="#contact-form" alt="link to contact form" class="nav-link">
+        <a href="#contact-form-section" alt="link to contact form" class="nav-link">
           Contact Us</a
         >
       </div>
@@ -29,7 +29,7 @@
     <!-- End -->
 
     <!-- Start of Header -->
-    <section class="header center" id="heading-section">
+    <section class="header" id="heading-section">
       <div class="header-text">
         <h1 id="heading">We are</h1>
         <p class="header-paragraph">
@@ -76,9 +76,9 @@
     <!-- Form submits to formspree only if validation passes, opening a new tab
     upon successful submission -->
 
-    <section id="contact-form">
+    <section id="contact-form-section">
       <form
-        id="contactForm"
+        id="contact-form"
         action="https://formspree.io/xpzydrpw"
         onsubmit="return validateForm()"
         method="POST"
@@ -95,11 +95,11 @@
           required
         />
 
-        <label for="companyName">Company name</label>
+        <label for="company-name">Company name</label>
         <input
-          id="companyName"
+          id="company-name"
           type="text"
-          name="companyName"
+          name="company-name"
           placeholder="Team Mango"
           required
         />
@@ -113,7 +113,7 @@
           required
         />
 
-        <button id="submitButton" type="submit" name="submit">Submit</button>
+        <button id="submit-button" type="submit" name="submit">Submit</button>
       </form>
     </section>
     <script src="script.js"></script>
