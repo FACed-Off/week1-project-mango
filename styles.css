@@ -1,3 +1,38 @@
+/* Reuseable Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Monserrat", sans-serif;
+  overflow: hidden;
+}
+
+/* Heading */
+.header {
+  width: 100%;
+  height: 50vh;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background: url(assets/default.png) no-repeat fixed 0% 80% / cover;
+  background-position: center center;
+}
+
+.header-text {
+  color: aliceblue;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 0.3rem;
+}
+
+#heading {
+  font-size: 6rem;
+  font-weight: 500;
+  animation: drop-letters 5s 1s infinite;
+  letter-spacing: 10px;
+  animation: drop-letters 5s 1s;
+}
+/* End of Heading */
+
 #contactForm {
   display: flex;
   flex-direction: column;
@@ -40,9 +75,21 @@ article {
     width: 60%;
   }
 
+
+  .header {
+    flex-direction: column;
+    background: url(assets/default.png) no-repeat fixed 50% 50% / cover;
+  }
+
+  #heading {
+    font-size: 6rem;
+  }
+
+
   #about-us {
     flex-direction: column;
   }
+
 }
 
 .square {
