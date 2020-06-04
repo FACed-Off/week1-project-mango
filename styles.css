@@ -5,10 +5,22 @@
   font-family: "Monserrat", sans-serif; /* overflow: hidden; */
 }
 
-body {
-  background-color: #f2a900;
+:root {
+  --brand-colour: #f2a900;
+  --bg-colour: #f1f1f2;
+  --text-colour: #201c23;
+  --accent-colour: #73a1ad;
 }
-/* #EB4C00 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-colour);
+  background-color: var(--bg-colour);
+}
+
 /* Heading */
 .header {
   width: 100%;
@@ -47,15 +59,14 @@ body {
 }
 /* End of Heading */
 
-#contactForm {
+#contact-form {
   display: flex;
   flex-direction: column;
   width: 30%;
   margin: 0 auto;
-  border: darkblue solid 2px;
+  border: var(--accent-colour) solid 2px;
   padding: 1rem;
   border-radius: 3%;
-  background: #f2f5f1;
 }
 
 #about-us {
@@ -74,7 +85,7 @@ article {
   height: 13em;
   width: 10em;
   object-fit: cover;
-  border: solid black 1px;
+  border: solid var(--text-colour) 2px;
   border-radius: 10%;
 }
 
@@ -90,8 +101,12 @@ article {
   overflow: hidden;
 }
 
+#submit-button {
+  cursor: pointer;
+}
+
 @media all and (max-width: 600px) {
-  #contactForm {
+  #contact-form {
     width: 60%;
   }
 
@@ -107,7 +122,7 @@ article {
 #nav-bar {
   display: flex;
   position: fixed;
-  background-color: darkblue;
+  background-color: var(--brand-colour);
   width: 100%;
   justify-content: space-between;
 }
@@ -141,5 +156,14 @@ article {
   }
   #heading {
     font-size: 3rem;
+  }
+}
+
+/* Only turn on hover effect when device supports it, 
+stops touch devices having sticky hover css effects */
+
+@media (hover: hover) {
+  .nav-link:hover {
+    background-color: var(--text-colour);
   }
 }

@@ -9,9 +9,11 @@
     <meta name="description" content="Team Mango Agency website" />
   </head>
   <body>
+    <h1 class="hidden-offscreen">Team Mango Agency Website</h1>
     <!-- Start of navbar -->
 
     <nav id="nav-bar">
+      <h1 class="hidden-offscreen">Navigation bar</h1>
       <img src="images/cover.png" alt="nav bar logo" id="nav-bar-logo" />
       <div id="link-container">
         <a href="#heading-section" alt="link to header" class="nav-link">
@@ -20,7 +22,7 @@
         <a href="#about-us" alt="link to about us" class="nav-link">
           About Us</a
         >
-        <a href="#contact-form" alt="link to contact form" class="nav-link">
+        <a href="#contact-form-section" alt="link to contact form" class="nav-link">
           Contact Us</a
         >
       </div>
@@ -29,9 +31,10 @@
     <!-- End -->
 
     <!-- Start of Header -->
-    <section class="header center" id="heading-section">
+    <section class="header" id="heading-section">
+      <h1 class="hidden-offscreen">Header section</h1>
       <div class="header-text">
-        <h1 id="heading">We are</h1>
+        <p id="heading">We are</p>
         <p class="header-paragraph">
           "Some cool, witty agency slogan here"
         </p>
@@ -49,7 +52,7 @@
         <h1>Hello I am Meeran</h1>
         <img
           class="headshot-image"
-          src="img/mbk.jpg"
+          src="images/mbk.jpg"
           alt="Headshot of Meeran"
         />
         <p>Short description about the person</p>
@@ -59,7 +62,7 @@
         <h1>Hello I am TC</h1>
         <img
           class="headshot-image"
-          src="img/tc.jpg"
+          src="images/tc.jpg"
           alt="Headshot of Terrence"
         />
         <p>Short description about the person</p>
@@ -69,7 +72,7 @@
         <h1>Hello I am Shivani</h1>
         <img
           class="headshot-image"
-          src="img/ss.png"
+          src="images/ss.png"
           alt="Headshot of Shivani"
         />
         <p>Short description about the person</p>
@@ -79,9 +82,9 @@
     <!-- Form submits to formspree only if validation passes, opening a new tab
     upon successful submission -->
 
-    <section id="contact-form">
+    <section id="contact-form-section">
       <form
-        id="contactForm"
+        id="contact-form"
         action="https://formspree.io/xpzydrpw"
         onsubmit="return validateForm()"
         method="POST"
@@ -98,11 +101,11 @@
           required
         />
 
-        <label for="companyName">Company name</label>
+        <label for="company-name">Company name</label>
         <input
-          id="companyName"
+          id="company-name"
           type="text"
-          name="companyName"
+          name="company-name"
           placeholder="Team Mango"
           required
         />
@@ -116,7 +119,7 @@
           required
         />
 
-        <button id="submitButton" type="submit" name="submit">Submit</button>
+        <button id="submit-button" type="submit" name="submit">Submit</button>
       </form>
     </section>
     <script src="script.js"></script>
