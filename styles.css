@@ -12,6 +12,10 @@
   --accent-colour: #73a1ad;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-colour);
   background-color: var(--bg-colour); 
@@ -87,6 +91,10 @@ article {
   height: 5px;
   width: 5px;
   overflow: hidden;
+}
+
+#submitButton {
+  cursor: pointer;
 }
 
 @media all and (max-width: 600px) {
