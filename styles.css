@@ -80,6 +80,15 @@ article {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+article > h1 {
+  padding: 0.5rem;
+}
+
+article > p {
+  padding: 0.5rem;
 }
 
 .headshot-image {
