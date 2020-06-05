@@ -27,6 +27,7 @@ body {
   height: 50vh;
   background-color: hsl(15, 55%, 96%);
   margin-bottom: 2rem;
+  border-bottom: solid var(--accent-colour) 3px;
 }
 
 .header-text {
@@ -66,7 +67,7 @@ body {
   margin: 0 auto;
   border: var(--accent-colour) solid 2px;
   padding: 1rem;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 #about-us {
@@ -79,6 +80,19 @@ article {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+article > h1 {
+  padding: 0.5rem;
+}
+
+article > p {
+  padding: 0.5rem;
+}
+
+input {
+  margin: 0.5rem 0;
 }
 
 .headshot-image {
@@ -86,7 +100,7 @@ article {
   width: 10em;
   object-fit: cover;
   border: solid var(--text-colour) 2px;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 /* Class to hide h1 accessbility label for html5 outline */
@@ -141,13 +155,20 @@ article {
   padding: 1em;
 }
 
-.nav-link:hover {
-  background-color: #ebc51d;
-}
 
 #link-container {
   display: flex;
 }
+
+/* Add focus effects to nav bar links and form input fields */
+.nav-link:focus {
+     background-color: var(--text-colour);
+}
+
+input:focus {
+  background-color: yellow;
+}
+
 
 @media all and (max-width: 420px) {
   #nav-bar-logo {
