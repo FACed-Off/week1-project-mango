@@ -86,7 +86,7 @@
       <form
         id="contact-form"
         action="https://formspree.io/xpzydrpw"
-        onsubmit="return validateForm()"
+        onsubmit="return nameValidation()"
         method="POST"
         target="_blank"
       >
@@ -121,6 +121,7 @@
 
         <button id="submit-button" type="submit" name="submit">Submit</button>
       </form>
+      <p id=errorText></p>
     </section>
     <script src="script.js"></script>
   </body>

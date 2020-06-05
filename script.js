@@ -1,17 +1,3 @@
-function validateForm() {
-  /*Abstracting any validation functions allows for simpler scalability */
-
-  //Returns boolean indicating successful validation
-  nameValidation();
-  //Validates the name input field of the contact form
-  if (nameValidation()) {
-    //Passes validation if name validation is successful
-    return true;
-  } else {
-    //Fails validation if name validation is unsuccessful
-    return false;
-  }
-}
 
 function nameValidation() {
   /*Validates name input to ensure no invalid characters are submitted, notifying
