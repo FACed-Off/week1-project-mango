@@ -141,13 +141,20 @@ article {
   padding: 1em;
 }
 
-.nav-link:hover {
-  background-color: #ebc51d;
-}
 
 #link-container {
   display: flex;
 }
+
+/* Add focus effects to nav bar links and form input fields */
+.nav-link:focus {
+     background-color: var(--text-colour);
+}
+
+input:focus {
+  background-color: yellow;
+}
+
 
 @media all and (max-width: 420px) {
   #nav-bar-logo {
