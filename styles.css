@@ -91,6 +91,10 @@ article > p {
   padding: 0.5rem;
 }
 
+input {
+  margin: 0.5rem 0;
+}
+
 .headshot-image {
   height: 13em;
   width: 10em;
