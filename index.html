@@ -12,9 +12,9 @@
     <h1 class="hidden-offscreen">Team Mango Agency Website</h1>
     <!-- Start of navbar -->
 
-    <nav id="nav-bar">
+    <nav id="nav-bar" role="navigation">
       <h1 class="hidden-offscreen">Navigation bar</h1>
-      <img src="images/cover.png" alt="nav bar logo" id="nav-bar-logo" />
+      <img src="assets/cover.png" alt="nav bar logo" id="nav-bar-logo" />
       <div id="link-container">
         <a href="#heading-section" alt="link to header" class="nav-link">
           Home</a
@@ -22,7 +22,11 @@
         <a href="#about-us" alt="link to about us" class="nav-link">
           About Us</a
         >
-        <a href="#contact-form-section" alt="link to contact form" class="nav-link">
+        <a
+          href="#contact-form-section"
+          alt="link to contact form"
+          class="nav-link"
+        >
           Contact Us</a
         >
       </div>
@@ -31,15 +35,15 @@
     <!-- End -->
 
     <!-- Start of Header -->
-    <section class="header" id="heading-section">
+    <section class="header">
       <h1 class="hidden-offscreen">Header section</h1>
       <div class="header-text">
-        <p id="heading">We are</p>
-        <p class="header-paragraph">
+        <p id="heading" tabindex="1">We are</p>
+        <p class="header-paragraph" tabindex="2">
           "Some cool, witty agency slogan here"
         </p>
         <div class="header-image-container">
-          <img src="assets/mango.svg" alt="mango-logo" />
+          <img src="assets/mango.svg" alt="mango-logo" tabindex="3" />
         </div>
       </div>
     </section>
@@ -49,33 +53,36 @@
     <section id="about-us">
       <h1 class="hidden-offscreen">About us</h1>
       <article id="meeran">
-        <h1>Hello I am Meeran</h1>
+        <h1 tabindex="4">Hello I am Meeran</h1>
         <img
           class="headshot-image"
-          src="images/mbk.jpg"
+          src="assets/mbk.jpg"
           alt="Headshot of Meeran"
+          tabindex="5"
         />
-        <p>Short description about the person</p>
+        <p tabindex="6">Short description about the person</p>
       </article>
 
       <article id="terrence">
-        <h1>Hello I am TC</h1>
+        <h1 tabindex="7">Hello I am TC</h1>
         <img
           class="headshot-image"
-          src="images/tc.jpg"
+          src="assets/tc.jpg"
           alt="Headshot of Terrence"
+          tabindex="8"
         />
-        <p>Short description about the person</p>
+        <p tabindex="9">Short description about the person</p>
       </article>
 
       <article id="shivani">
-        <h1>Hello I am Shivani</h1>
+        <h1 tabindex="10">Hello I am Shivani</h1>
         <img
           class="headshot-image"
-          src="images/ss.jpg"
+          src="assets/ss.png"
           alt="Headshot of Shivani"
+          tabindex="11"
         />
-        <p>Short description about the person</p>
+        <p tabindex="12">Short description about the person</p>
       </article>
     </section>
 
@@ -86,41 +93,47 @@
       <form
         id="contact-form"
         action="https://formspree.io/xpzydrpw"
-        onsubmit="return validateForm()"
+        onsubmit="return nameValidation()"
         method="POST"
         target="_blank"
       >
-        <h1>Contact Form</h1>
+        <h1 tabindex="13">Contact Form</h1>
 
-        <label for="name">Name</label>
+        <label for="name" tabindex="14">Name</label>
         <input
           id="name"
           type="text"
           name="name"
           placeholder="John Doe"
           required
+          tabindex="15"
         />
 
-        <label for="company-name">Company name</label>
+        <label for="company-name" tabindex="16">Company name</label>
         <input
           id="company-name"
           type="text"
           name="company-name"
           placeholder="Team Mango"
           required
+          tabindex="17"
         />
 
-        <label for="email">E-mail</label>
+        <label for="email" tabindex="18">E-mail</label>
         <input
           id="email"
           type="email"
           name="email"
           placeholder="hello@teammango.com"
           required
+          tabindex="19"
         />
 
-        <button id="submit-button" type="submit" name="submit">Submit</button>
+        <button id="submit-button" type="submit" name="submit" tabindex="20">
+          Submit
+        </button>
       </form>
+      <p id=errorText></p>
     </section>
     <script src="script.js"></script>
   </body>
