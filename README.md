@@ -7,14 +7,19 @@
 4. Change directories to the new `~/week1-project-mango` directory: `cd ~/week1-project-mango/`
 5. To ensure that the master branch is up-to-date, use the pull command:`git pull https://github.com/FACed-Off/week1-project-mango.git master
 `
-## Featues
+## Process
+### Why
+Because we had a burning desire to create a fake agency website! :boom:
+### What
+This is an agency website for web deveolopers
+### How
+We triple programmed.
 
 ## Team
-### What we do, who we are, and how to contact us?
 ### What we do?
-Web dev
+Web dev agency
 ### What can we offer you?
-Incredible web development solutions
+Incredible web development solutions!
 ### Who we are?
 Meeran, Shivani and Terrence
 ### Tell us about you and let us tell you about us!
