@@ -27,6 +27,7 @@ body {
   height: 50vh;
   background-color: hsl(15, 55%, 96%);
   margin-bottom: 2rem;
+  border-bottom: solid var(--accent-colour) 3px;
 }
 
 .header-text {
